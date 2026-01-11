@@ -1,10 +1,10 @@
-Task Overview
+# Task Overview
 
 The objective of this task is to design and develop a responsive landing page with an interactive navigation menu. The navigation bar remains fixed at the top of the page and dynamically changes its style when the user scrolls. Hover effects are applied to menu items to enhance interactivity and user experience.
 
 The project emphasizes modern UI/UX design principles, smooth animations, responsiveness across devices, and clean frontend implementation using HTML, CSS, and JavaScript.
 
-README.md
+# README.md
 # Responsive Landing Page with Interactive Navigation
 
 This project implements a modern and responsive landing page with an interactive navigation menu that enhances user experience through smooth hover effects and scroll-based style changes.
@@ -44,11 +44,6 @@ The project focuses on clean UI design, usability, and frontend interactivity us
 
 
 ##  How to Run the Project
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-
 
 Navigate to the project directory:
 
