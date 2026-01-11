@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 15, 30, 0.3);
+  backdrop-filter: blur(12px);
+  transition: 0.4s ease;
+  z-index: 1000;
+}
+
+header.scrolled {
+  background: rgba(42, 42, 240, 0.85);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border: 2px solid #41c0f7;
+  padding: 6px 22px;
+}
+
+/* Navigation */
+nav a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #4facfe;
+}
+
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #2d66d0, #243b55);
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 54px;
+  line-height: 1.2;
+}
+
+.hero-content h1 span {
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  max-width: 500px;
+  opacity: 0.9;
+}
+
+
+.hero-content button {
+  padding: 14px 35px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-content button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(79,172,254,0.6);
+}
+
+
+.section {
+  min-height: 100vh;
+  padding: 120px 60px;
+  background: #f4f6fb;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px 30px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+}
